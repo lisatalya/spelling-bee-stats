@@ -1,3 +1,6 @@
+##BeeStats project Part 1 - single hive stats
+#Stay tuned for the Shiny App and multiple hive stats
+
 #load data
 BeeStats <- data.frame(read.csv("BeeStats.csv",sep=",",strip.white=TRUE))
 head(BeeStats)
@@ -92,4 +95,5 @@ hive_stats <- function() {
   }
   
 hive_stats()
+
 
