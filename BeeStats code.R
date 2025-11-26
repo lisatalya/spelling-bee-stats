@@ -1,5 +1,3 @@
-library(shiny)
-
 #load data
 BeeStats <- data.frame(read.csv("BeeStats.csv",sep=",",strip.white=TRUE))
 head(BeeStats)
@@ -94,13 +92,4 @@ hive_stats <- function() {
   }
   
 hive_stats()
-
-#build shiny ui
-
-hive_ui <- function() {
-  
-}
-
-
-#shinyApp(ui=hive_ui, server=hive_stats)
 
